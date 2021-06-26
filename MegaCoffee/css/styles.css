@@ -122,15 +122,20 @@ topMenu-BrandStory.hyml css
   color: #FFDC00;
 }
 
-.BrandStoryContent-Img{
+.BrandStoryContent-Img {
   text-align: center;
 }
-#BrandImg1{
+
+#BrandImg1 {
   margin: 30px;
+  width: 50vw;
 }
-#BrandImg2{
+
+#BrandImg2 {
   margin: 30px;
+  width: 60vw;
 }
+
 .BrandStoryContent {
   margin: 50px auto;
   width: 75vw;
@@ -138,15 +143,15 @@ topMenu-BrandStory.hyml css
 }
 
 .BrandStoryContext {
-  margin: 30px auto;
-  width: 900px;
   font-size: 15px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
 
 .BrandStoryContext-1 {
+  margin: 30px auto;
   text-align: center;
+  width: 70vw;
 }
 
 #BrandStoryContext-secondLine {
@@ -156,8 +161,9 @@ topMenu-BrandStory.hyml css
 
 .BrandStoryContext-2 {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  padding: 80px;
+  grid-template-columns: 1fr 1fr;
+  width: 60vw;
+  margin: 30px;
 }
 
 .BrandStoryContext-2-1 p {
