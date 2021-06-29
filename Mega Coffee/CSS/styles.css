@@ -1,0 +1,195 @@
+/*-----------------------------------------------------------
+  Common Form
+------------------------------------------------------------*/
+body {
+  background-color: #222831;
+  margin: 0;
+}
+
+#topMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+  background-color: #232323;
+  border-bottom: 2.5px solid white;
+}
+
+#logo {
+  width: 120px;
+  padding: 0;
+  margin: 20px 25px 16px;
+}
+
+#topMenu ul {
+  display: grid;
+  grid-template-columns: 15rem 15rem 15rem;
+  margin: 105px 0 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#topMenu a {
+  color: #FFDC00;
+  text-decoration: none;
+}
+
+#theme {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#theme h2 {
+  color: #FFDC00;
+  font-size: 80px;
+  font-family: 'Big Shoulders Inline Display', cursive;
+  margin: 0;
+  /* border-bottom: 1px solid #FFDC00; */
+}
+
+#theme .Circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #FFDC00;
+  margin: 30px 15px 0;
+}
+
+#Content {
+  padding: 50px 0;
+  margin: 50px auto;
+  background-color: #C8C2BC;
+}
+
+.bannerImg img {
+  width: 80%;
+  height: 400px;
+  margin: 100px 0 0 0;
+}
+
+@media(max-width:1350px) {
+  .bannerImg img {
+    width: 800px;
+  }
+}
+
+#footer h1 {
+  text-align: center;
+  font-size: 10px;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+
+/*-----------------------------------------------------------
+  index.html
+------------------------------------------------------------*/
+.homeH1 {
+  text-align: center;
+  margin: 80px 0 0;
+  font-size: 100px;
+  color: #3D2010;
+  font-family: 'Big Shoulders Inline Display', cursive;
+}
+
+.homeContext {
+  text-align: center;
+  margin: 60px auto;
+  padding: 20px 0 150px;
+  width: 50vw;
+  font-size: 20px;
+  color: #3D2010;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*-----------------------------------------------------------
+  topMenu-BrandStory.hyml
+------------------------------------------------------------*/
+.BrandStoryContext {
+  margin: 30px auto;
+  width: 900px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.BrandStoryContext-1 {
+  text-align: center;
+}
+
+#BrandStoryContext-secondLine {
+  font-size: 20px;
+  color: #3D2010;
+}
+
+.BrandStoryContext-2 {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  padding: 80px;
+}
+
+.BrandStoryContext-2-1 p {
+  margin: 0px;
+}
+
+.BrandStoryContext-2-2 p {
+  margin: 0px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #3D2010;
+}
+
+#BrandStoryContext-2-2-yellow {
+  color: #FFDC00;
+}
+
+/*-----------------------------------------------------------
+  topMenu-Menu.hyml
+------------------------------------------------------------*/
+.MenuTable {
+  text-align: center;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+.MenuTable td {
+  border: 1px solid #FFDC00;
+}
+
+@media(max-width:1495px) {
+  .MenuTable {
+    width: 990px;
+  }
+}
+
+.CoffeeTable td {
+  border: 0px;
+}
+
+.textCoffee {
+  font-family: NanumBarunGothic;
+  font-size: 14px;
+  line-height: 20px;
+  color: #724F47;
+  text-decoration: none;
+}
+/*-----------------------------------------------------------
+  topMenu-StoreInformation.hyml
+------------------------------------------------------------*/
+.storeInfoTable {
+  border: 1px solid black;
+}
+
+.title {
+  background-color: #FBF8F3;
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+}
+
+.contentInfo {
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+}
