@@ -1,0 +1,256 @@
+/*********** 공통 부분  ***********/
+body {
+  background-color: #222831;
+  margin: 0;
+}
+
+/* 각 페이지 컨텐츠 컨테이너 */
+.Content {
+  /*
+  position: absolute;
+  top:30%;
+  left: 50%; transform: translateX(-50%); /*translateX 공부*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 200px;
+  /* flex 부분 다시 한번 정리 */
+  margin: 50px auto;
+  width: 75vw;
+  text-align: center;
+  background-color: #C8C2BC;
+}
+
+/* 상단 메뉴바 */
+.topMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+  background-color: #232323;
+}
+/* logo 이미지 */
+.logo {
+  width: 120px;
+  padding: 0;
+  margin: 20px 25px 10px;
+}
+.topMenu ul {
+  display: grid;
+  grid-template-columns: 150px 15rem 15rem;
+  margin: 105px 0 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.topMenu li {
+  float: right;
+  /* float에 대하여 */
+  padding: 0;
+}
+.topMenu a {
+  color: #FFDC00;
+  text-decoration: none;
+}
+/* 페이지 하단의 footer */
+.footer {
+  width: 100vw;
+  background-color: #222831;
+  text-align: center;
+}
+.footer h1 {
+  font-size: 10px;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+/* 각 메뉴 클릭시 상단 부 헤드라인 부분 */
+.theme {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Big Shoulders Inline Display', cursive;
+  color: #FFDC00;
+}
+/* 메뉴별 헤드라인 밑에 점 3개 */
+.theme hr{
+  width: 10%;
+  border-style: none none dotted none;
+  border-width: 20px;
+  color: #FFDC00;
+}
+
+
+
+/*********** 홈 페이지  ***********/
+
+/* 홈 컨텐츠 헤드라인 */
+.homeH1 {
+  /*홈 페이지 h1*/
+  margin: 0;
+  padding: 10vh 0;
+  font-size: 100px;
+  font-family: 'Big Shoulders Inline Display', cursive;
+  color: #3D2010;
+}
+/*홈 컨텐츠 이미지 부분 */
+.homeImg {
+  width: 50vw;
+  margin: 0;
+  padding: 0;
+}
+/*홈 컨텐츠 글씨 부분 */
+.homeContext {
+  margin: 10vh auto;
+  padding: 20px 0 150px;
+  width: 50vw;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #3D2010;
+}
+
+
+/*********** topMenu-BrandStory.html 부분 ***********/
+
+/* brand story 컨텐츠 부분 첫번 째 이미지 */
+#BrandImg1 {
+  margin: 40px;
+  width: 50vw;
+}
+/* 두번째 이미지 */
+#BrandImg2 {
+  margin: 30px;
+  width: 60vw;
+}
+
+/* BrandStory의 글씨 부분 컨테이너 */
+.BrandStoryContext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+/* 수평 나열 글씨 */
+.BrandStoryContext-1 {
+  margin: 30px auto;
+  width: 70vw;
+}
+/* 두번째 라인 글씨 하이라이팅 한 부분 */
+#BrandStoryContext-secondLine {
+  font-size: 20px;
+  color: #3D2010;
+}
+/* 왼쪽 오른쪽으로 나뉘는 글씨 부분 */
+.BrandStoryContext-2 {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 30px;
+  width: 60vw;
+}
+/* 왼쪽 글씨 부분 */
+.BrandStoryContext-2-1 p {
+  margin: 0px;
+}
+/* 오른쪽 글씨 부분 */
+.BrandStoryContext-2-2 p {
+  margin: 0px;
+  padding-left: 30px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #3D2010;
+}
+/* 대용랑 24oz 사이즈 부분만 노란색 하이라이트 */
+#BrandStoryContext-2-2-yellow {
+  color: #FFDC00;
+}
+
+
+/*********** topMenu-Menu.hyml css **********/
+
+/* 메뉴 테이블 */
+.MenuTable{
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #FFDC00;
+  margin:40px 0;
+}
+.MenuTable td{
+  /*cellpadding은 테이블 내의 td, th에 직접 padding=0으로 해주면 됨*/
+  padding:0;
+}
+/* 메뉴 테이블 위에 컨테이너 테이 */
+.MenuTitle{
+  font-size: 50px;
+  font-family: 'Big Shoulders Inline Display', cursive;
+  font-weight: bold;
+  padding-top: 40px;
+  color: #3D2010;
+}
+/* 컨테이너 테이블 셀 한칸 테이블 */
+.MenuTable-in{
+  width: 100%;
+  height: 15vw;
+  font-size: 14px;
+  border-collapse: collapse;
+  border: 1px solid #FFDC00;
+}
+.MenuTable-in td{
+  text-align: center;
+  background-color: white;
+  border-style: none;
+  padding:0;
+
+}
+.MenuTable img{
+  width: 8vw;
+  padding:0;
+  margin: 0;
+}
+
+
+/*********** topMenu-StoreInformation.html **********/
+/* 각 이미지 별 타이틀 */
+.StoreTitle{
+  padding: 40px;
+  font-size: 50px;
+  font-family: 'Big Shoulders Inline Display', cursive;
+  font-weight: bold;
+  text-align: center;
+  color: #3D2010;
+}
+/* 가게 앞 사진 */
+#StorePic{
+  width: 60vw;
+  height: 30vw;
+}
+/* 가게 정보 테이블 */
+.StoreTable{
+  border-style: solid;
+  border-collapse: collapse;
+  width: 30vw;
+  height: 10vw;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.StoreTable tr{
+  border-style: solid;
+  border-width: 1px;
+}
+.StoreTable th{
+  background-color: #FBF8F3;
+
+}
+.StoreTable td{
+  background-color: #FFFFFF;
+}
+/* 가게 위치 정보 그림 */
+#StoreLocation{
+  padding-bottom: 40px;
+}
